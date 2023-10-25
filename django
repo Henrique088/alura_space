@@ -1,0 +1,35 @@
+para instalar pip install django
+
+
+depois para criar o projeto, django-admin startproject setup .
+
+
+o ponto é apenas para não criar outra pasta setup dentro de setup
+
+
+rodar o servidor pela primeira vez, python manage.py runserver
+
+pip freeze > requeriment.txt, para criar um aquivo com as dependencias
+
+
+pip install python-dotenv, para instalar o pacote que serve para ocultar certas variaveis nas quais não queremos que sejam vistas. Como no caso do django o 
+
+
+
+apos isso, criar um aquivo fora de pastas .env
+
+e colocar no arquivo as variaveis que desejamos ocultar 
+ex:
+SECRET_KEY = django-insecure-mb%h&s_b(^g(n5dcuc-gr^k@fjgs2fx7gyk8)&sbqkzrwes+l0
+
+logo apos importar os e importar from dotenv import load_dotenv
+
+depois chamar 
+
+load_dotenv()
+
+e depois trocar a key 
+
+SECRET_KEY = str(os.getenv('SECRET_KEY'))
+
+
