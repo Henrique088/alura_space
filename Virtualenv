@@ -17,3 +17,6 @@ para desativar é só digitar deactivate
 pip freeze, para saber quais dependendicas são necessárias para se rodar nosso projeto
 
 pip freeze > nome.txt, cria uma arquivo txt com os nomes
+
+
+
